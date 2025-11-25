@@ -2,36 +2,43 @@
 const projectsData = [
     {
         id: 1,
-        title: "Project 1",
-        description: "Description of your first project. Add details about technologies used and your role.",
-        technologies: ["React", "JavaScript", "CSS"],
+        title: "Zombies",
+        description: "Top-down zombie survival game built in a custom engine.",
+        technologies: ["Java", "Engine Development", "Object Oriented"],
         link: "#"
     },
     {
         id: 2,
-        title: "Project 2",
-        description: "Description of your second project. Highlight key features and accomplishments.",
-        technologies: ["Node.js", "Express", "MongoDB"],
+        title: "AiRobic",
+        description: "AI-powered fitness app that provides personalized workout plans.",
+        technologies: ["Team programming", "React.js", "Google oAuth", "Firebase"],
         link: "#"
     },
     {
         id: 3,
-        title: "Project 3",
-        description: "Description of your third project. Showcase your skills and experience.",
-        technologies: ["Python", "Django", "PostgreSQL"],
+        title: "PNG Chaser",
+        description: "First person chase game built in a custom engine.",
+        technologies: ["C++", "OpenGL", "Data Oriented Design", "ECS"],
+        link: "#"
+    },
+    {
+        id: 4,
+        title: "Terrain Painter",
+        description: "3D terrain painting application with real-time rendering.",
+        technologies: ["Partner Programming", "C++", "OpenGL"],
         link: "#"
     }
 ];
 
 // Projects component - displays portfolio projects
 const Projects = () => {
-    const projects = projectsData;
+    const { Link } = ReactRouterDOM;
 
     return (
         <section id="projects" className="projects-section">
             <h2>My Projects</h2>
             <div className="projects-grid">
-                {projects.map(project => (
+                {projectsData.map(project => (
                     <div key={project.id} className="project-card">
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
@@ -40,7 +47,7 @@ const Projects = () => {
                                 <span key={index} className="tech-tag">{tech}</span>
                             ))}
                         </div>
-                        <a href={project.link} className="project-link">View Project</a>
+                        <Link to={`/project/${project.id}`} className="project-link">View Project</Link>
                     </div>
                 ))}
             </div>

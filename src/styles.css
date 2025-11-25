@@ -158,6 +158,31 @@ body {
     color: #764ba2;
 }
 
+/* About Section */
+.about-section {
+    padding: 5rem 5%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 5rem 5%;
@@ -197,6 +222,128 @@ body {
 .contact-link:hover {
     background-color: #ecf0f1;
     color: #2c3e50;
+}
+
+/* Project Detail Page */
+.project-detail-container {
+    min-height: 100vh;
+    padding: 5rem 5% 2rem;
+    background-color: #fff;
+}
+
+.project-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-button {
+    background-color: transparent;
+    border: 2px solid #667eea;
+    color: #667eea;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.back-button:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateX(-5px);
+}
+
+.project-detail h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.project-video {
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-video video {
+    display: block;
+    width: 100%;
+}
+
+.project-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-overview,
+.project-technologies,
+.project-features {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.project-overview h2,
+.project-technologies h2,
+.project-features h2 {
+    font-size: 1.75rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.project-overview p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.project-features ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-features li {
+    font-size: 1.1rem;
+    color: #666;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-detail-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #667eea;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-detail-link:hover {
+    background-color: #764ba2;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
