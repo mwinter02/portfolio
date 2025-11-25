@@ -261,6 +261,53 @@ body {
     margin-bottom: 2rem;
 }
 
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+}
+
+.content-heading {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.content-image,
+.content-video {
+    margin: 1rem 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-image img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.content-video video {
+    width: 100%;
+    display: block;
+}
+
+.content-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
 .project-video {
     margin-bottom: 3rem;
     border-radius: 10px;
