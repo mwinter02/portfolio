@@ -13,7 +13,7 @@ var zombiesProject = {
     content: [
         {
             type: "text",
-            value: "Final project for the course CS1950N - 2D Game Engines at Brown University. The semester featured building a game engine from scratch in Java, focusing on object-oriented design principles and component-based architecture." +
+            value: "Final project for CS1950N - 2D Game Engines at Brown University. The semester featured building a game engine from scratch in Java, focusing on object-oriented design principles and component-based architecture." +
                 "My game is a Minecraft-inspired top-down zombie survival game, where players must survive waves of zombies. " +
                 "Players can collect XP which can be used to upgrade equipment and open new areas of the map."
 
