@@ -75,7 +75,7 @@ const Home = ({ onNavigateToProject }) => {
             <header id="home" className="hero">
                 <div className="hero-content">
                     <h1>Welcome to my website</h1>
-                    <p>I'm a software developer with a passion for creating video games</p>
+                    <p>Updates in progress...</p>
                     <a href="#projects" className="cta-button">
                         View My Work
                     </a>
